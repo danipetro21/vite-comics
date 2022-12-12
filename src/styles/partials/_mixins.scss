@@ -1,0 +1,6 @@
+@mixin center($type: "both") {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
