@@ -90,10 +90,13 @@ export default {
 
 <template>
 
+    <section class="comics">
+
         <div class="boxes container">
             <!-- card -->
             <Comic v-for="(comic, index) in comics" :key="index" :details="comic" />
         </div>
+    </section>
 
 </template>
 
@@ -101,11 +104,24 @@ export default {
 @use '../styles/partials/variables' as *;
 @use '../styles/partials/mixins' as *;
 
+.comics {
+    padding: 4rem 1rem;
+    text-align: center;
+    position: relative;
+    
+    h1 {
+        font-weight: 600;
+        background-color: $bg_primary;
+        width: 230px;
+        padding: 15px 0;
+        position: absolute;
+        top: -20px;
+    }
 
     .boxes {
         margin-top: 2rem;
         display: flex;
         flex-wrap: wrap;
     }
-
+}
 </style>

@@ -5,7 +5,7 @@ export default {
     components: {
         ListComics
     },
-    }
+}
 
 </script>
 
@@ -14,13 +14,13 @@ export default {
 
         <div class="content">
             <div class="box">
-                <section class="comics">
-                <h1 class="tag">CURRENT SERIES</h1>
 
-                <ListComics/>
+                <h1 class="tag">CURRENT SERIES</h1>
+                
+                    <ListComics />
 
                 <a class="tag" href="">LOAD MORE</a>
-            </section> 
+
             </div>
         </div>
 
@@ -75,44 +75,43 @@ main {
     width: 100%;
     height: 150px;
 }
-.box{
+
+.box {
     max-width: 1400px;
     margin: 0 auto;
     height: 100%;
-}
-
-.comics {
-    padding: 4rem 1rem;
-    text-align: center;
     position: relative;
-    
+    text-align: center;
+
     h1 {
-        width: 230px;
+        width: 270px;
         position: absolute;
         top: -20px;
         padding: 15px 0;
     }
-    a{
+
+    a {
         padding: 10px 50px;
         color: white;
         text-decoration: none;
+        display: inline-block;
+        margin-bottom: 50px;
     }
-    .tag{
+
+    .tag {
         font-weight: 600;
         background-color: $bg_primary;
+       
     }
-
-
-
-   
 }
+
+
 
 .content {
     background-color: $bg_secondary;
     color: $primary_color;
-    height: 100%;
+    width: 100%;
 }
-
 
 .service {
     background-color: $bg_primary ;
@@ -126,7 +125,7 @@ main {
 
     }
 
-    li{
+    li {
         display: flex;
         align-items: center;
         gap: 7px;
@@ -136,7 +135,7 @@ main {
     img {
         width: 60px;
         height: 60px;
-        object-fit:contain;
+        object-fit: contain;
     }
 }
 </style>

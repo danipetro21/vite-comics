@@ -24,10 +24,7 @@ export default {
 @use '../styles/partials/mixins' as *;
 
 .comic-card {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    
     width: calc(100% / 6);
     padding: 0 20px;
 
@@ -39,7 +36,7 @@ export default {
         display: block;
         width: 100%;
         height: 200px;
-        object-fit: cover;
+        object-fit:cover;
     }
 }
 </style>
