@@ -96,6 +96,7 @@ export default {
             <!-- card -->
             <Comic v-for="(comic, index) in comics" :key="index" :details="comic" />
         </div>
+        
     </section>
 
 </template>
