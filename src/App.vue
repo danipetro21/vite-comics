@@ -22,7 +22,11 @@ export default {
 
   <JumboTron/>
   
+  <main>
+
   <AppMain/>
+
+  </main>
 
   <AppFooter/>
 </template>

@@ -10,7 +10,6 @@ export default {
 </script>
 
 <template>
-    <main>
 
         <div class="content">
             <div class="box">
@@ -31,34 +30,34 @@ export default {
 
                 <ul>
                     <li>
-                        <img src="public/img/buy-comics-digital-comics.png" alt="">
+                        <img src="/img/buy-comics-digital-comics.png" alt="">
                         <span>DIGITAL COMICS</span>
                     </li>
 
                     <li>
-                        <img src="public/img/buy-comics-merchandise.png" alt="">
+                        <img src="/img/buy-comics-merchandise.png" alt="">
                         <span>DC MERCHANDISE</span>
                     </li>
 
                     <li>
-                        <img src="public/img/buy-comics-subscriptions.png" alt="">
+                        <img src="/img/buy-comics-subscriptions.png" alt="">
                         <span>SUBSCRIPTION</span>
                     </li>
 
                     <li>
-                        <img src="public/img/buy-comics-shop-locator.png" alt="">
+                        <img src="/img/buy-comics-shop-locator.png" alt="">
                         <span>COMIC SHOP LOCATOR</span>
                     </li>
 
                     <li>
-                        <img src="public/img/buy-dc-power-visa.svg" alt="">
+                        <img src="/img/buy-dc-power-visa.svg" alt="">
                         <span>DC POWER VISA</span>
                     </li>
                 </ul>
 
             </div>
         </div>
-    </main>
+
 </template>
 
 <style lang="scss" scoped>
