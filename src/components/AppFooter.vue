@@ -153,6 +153,8 @@ footer {
 
     img {
         width: 90%;
+        object-fit: cover;
+        object-position: 0 -50px ;
     }
 }
 
