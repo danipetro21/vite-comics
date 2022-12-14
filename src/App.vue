@@ -2,20 +2,26 @@
 import AppHeader from './components/AppHeader.vue';
 import AppFooter from './components/AppFooter.vue';
 import AppMain from './components/AppMain.vue';
+import JumboTron from './components/JumboTron.vue';
 
 export default {
   // name: "App",
   components: {
     AppHeader,
     AppFooter,
-    AppMain
+    AppMain,
+    JumboTron
   }
 }
 </script>
 
 <template>
+
+
   <AppHeader/>
 
+  <JumboTron/>
+  
   <AppMain/>
 
   <AppFooter/>

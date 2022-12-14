@@ -75,13 +75,11 @@ export default {
 
             <nav>
                 <ul>
-                    <div :class="{link: link.current}" v-for="(link, index) in links" :key="index">
-                        <li>
+                        <li :class="{link: link.current}" v-for="(link, index) in links" :key="index">
                             <a :href="link.url" :class="{ active: link.current }">
                                 {{ link.text }}
                             </a>
                         </li>
-                    </div>
                 </ul>
             </nav>
 

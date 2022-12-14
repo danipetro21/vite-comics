@@ -1,7 +1,10 @@
 <script>
-
+import ListComics from './ListComics.vue';
 export default {
     name: "AppMain",
+    components: {
+        ListComics
+    },
     }
 
 </script>
@@ -9,9 +12,15 @@ export default {
 <template>
     <main>
 
-        <div class="container content">
+        <div class="content">
             <div class="box">
-                <h1> --> Content goes here!!! </h1>
+                <section class="comics">
+                <h1 class="tag">CURRENT SERIES</h1>
+
+                <ListComics/>
+
+                <a class="tag" href="">LOAD MORE</a>
+            </section> 
             </div>
         </div>
 
@@ -59,7 +68,6 @@ export default {
 
 main {
     width: 100%;
-    height: 300px;
     border: 1px solid black;
 }
 
@@ -73,10 +81,38 @@ main {
     height: 100%;
 }
 
+.comics {
+    padding: 4rem 1rem;
+    text-align: center;
+    position: relative;
+    
+    h1 {
+        width: 230px;
+        position: absolute;
+        top: -20px;
+        padding: 15px 0;
+    }
+    a{
+        padding: 10px 50px;
+        color: white;
+        text-decoration: none;
+    }
+    .tag{
+        font-weight: 600;
+        background-color: $bg_primary;
+    }
+
+
+
+   
+}
+
 .content {
     background-color: $bg_secondary;
     color: $primary_color;
+    height: 100%;
 }
+
 
 .service {
     background-color: $bg_primary ;
